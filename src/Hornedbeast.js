@@ -16,13 +16,15 @@ class Hornedbeast extends React.Component {
   }
   render() {
     return (
-      <Card className="imgHorn" style={{ width: '18rem' }}>
+      <div className="images">
+        <Card className="imgHorn" style={{ width: '18rem' }}>
         <Card.Img onClick={this.beastClick}  src={this.props.imageUrl} alt={this.props.title}/>
-        <Card.Body>
+        <Card.Body className="cardBody">
           <Card.Title>{this.props.title}</Card.Title>
-          <Card.Text> ❤️ = {this.state.clickedBeast}</Card.Text>
+          <Card.Text> ❤️ = {this.state.clickedBeast} </Card.Text>
         </Card.Body>
       </Card>
+      </div>
     )
   }
 }

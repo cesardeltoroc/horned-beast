@@ -1,7 +1,25 @@
 .App {
   text-align: center;
 }
-
+.images{
+  display: inline-block;
+  margin-right: 10px;
+}
 .imgHorn{
   display: inline-block;
+  color: brown;
 }
+.card-img{
+  height: 250px
+}
+div.imgHorn.card{
+  background-color: rgb(60, 60, 60);
+}
+.dropBar {
+  display: flex;
+  margin-left: 30px;
+}
+body{
+  background-color: rgb(177, 177, 177);
+}
+
