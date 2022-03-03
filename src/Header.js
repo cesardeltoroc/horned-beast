@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from 'react-bootstrap/dropdown'
+import { Dropdown } from 'react-bootstrap';
 
 class Header extends React.Component {
   render() {
