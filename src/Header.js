@@ -13,7 +13,6 @@ class Header extends React.Component {
           <Dropdown.Menu>
             <Dropdown.Item href="https://www.linkedin.com/in/cesardeltoroc/">LinkedIn</Dropdown.Item>
             <Dropdown.Item href="https://github.com/cesardeltoroc">Github</Dropdown.Item>
-            <Dropdown.Item href="https://github.com/cesardeltoroc">Github</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </>
