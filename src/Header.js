@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from 'react-bootstrap/dropdown'
+import { Dropdown } from 'react-bootstrap';
 
 class Header extends React.Component {
   render() {
@@ -12,6 +12,7 @@ class Header extends React.Component {
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item href="https://www.linkedin.com/in/cesardeltoroc/">LinkedIn</Dropdown.Item>
+            <Dropdown.Item href="https://github.com/cesardeltoroc">Github</Dropdown.Item>
             <Dropdown.Item href="https://github.com/cesardeltoroc">Github</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
