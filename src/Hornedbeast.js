@@ -18,10 +18,10 @@ class Hornedbeast extends React.Component {
     return (
       <div className="images">
         <Card className="imgHorn" style={{ width: '18rem' }}>
-        <Card.Img onClick={this.beastClick}  src={this.props.imageUrl} alt={this.props.title}/>
+        <Card.Img onClick={this.beastClick}  src={this.props.src} title={this.props.name} description={this.props.description}/>
         <Card.Body className="cardBody">
           <Card.Title>{this.props.title}</Card.Title>
-          <Card.Text> ❤️ = {this.state.clickedBeast} </Card.Text>
+          <Card.Text> YOU ❤️ THIS IMAGE = {this.state.clickedBeast} </Card.Text>
         </Card.Body>
       </Card>
       </div>

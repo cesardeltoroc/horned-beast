@@ -1,16 +1,26 @@
 import React from 'react';
+import data from './data.json'
 import Hornedbeast from './Hornedbeast';
-import bull from './Assests/bull.jpeg'
-import pronghorn from './Assests/pronghorn.jpeg'
-import elk from './Assests/elksnow.jpeg'
+
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      beasts: data
+    }
+  }
   render () {
+    let animalArray = this.state.beasts.map((animal, index) => (
+      <Hornedbeast
+        src={animal.image_url}
+        title={animal.title}
+        description={animal.description}
+      />
+    ));
     return(
       <>
-        <Hornedbeast title={'Elk'} imageUrl={elk} description={'Image of an Elk'} />
-        <Hornedbeast title={'ProngHorn'} imageUrl={pronghorn} description={'Image of an Pronghorn'} />
-        <Hornedbeast title={'Bull'} imageUrl={bull} description={'Image of a calm Bull'}/>
+      {animalArray}
       </>
     )
   }
