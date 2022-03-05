@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -5,22 +6,29 @@
   display: inline-block;
   margin-right: 10px;
   margin-top: 20px;
+  
 }
-.imgHorn{
-  display: inline-block;
-  color: brown;
-}
-.card-img{
-  height: 250px
-}
+
 div.imgHorn.card{
-  background-color: rgb(60, 60, 60);
+  background-color: rgb(27, 75, 126); 
 }
-.dropBar {
-  display: flex;
-  margin-left: 30px;
+div.images{
+  justify-content: space-between;
 }
-body{
-  background-color: rgb(177, 177, 177);
+h1 {
+  font-size: 5em;
+  color: rgb(0, 0, 0);
+  margin: auto;
+}
+div.card-title.h5{
+  font-family: 'Redressed', cursive;
+  text-decoration: underline;
+  font-size: 1.8em;
+  font-weight:650;
+  color: rgb(154, 189, 199);
+}
+p.card-text{
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 

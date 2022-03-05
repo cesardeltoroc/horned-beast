@@ -1,20 +1,19 @@
 import React from 'react';
-import { Dropdown } from 'react-bootstrap';
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 class Header extends React.Component {
   render() {
     return (
       <>
-        <h1>Beast That Have Horns</h1>
-        <Dropdown className='dropBar' color='black'>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Menu
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
+        <h1>Animal Horn Gallery</h1>
+        <div className='navBar'>
+          <DropdownButton id="dropdown-basic-button" title="hOmE / WeLcOmE">
             <Dropdown.Item href="https://www.linkedin.com/in/cesardeltoroc/">LinkedIn</Dropdown.Item>
             <Dropdown.Item href="https://github.com/cesardeltoroc">Github</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+          </DropdownButton>
+        </div>
+
       </>
     )
   }

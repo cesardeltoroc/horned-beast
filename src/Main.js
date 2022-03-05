@@ -16,6 +16,7 @@ class Main extends React.Component {
         src={animal.image_url}
         title={animal.title}
         description={animal.description}
+        horns={animal.horns}
       />
     ));
     return(
