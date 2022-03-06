@@ -1,6 +1,7 @@
 import React from 'react';
 import data from './data.json'
 import Hornedbeast from './Hornedbeast';
+import SelectedBeast from './SelectedBeast';
 
 
 class Main extends React.Component {
@@ -10,6 +11,8 @@ class Main extends React.Component {
       beasts: data
     }
   }
+
+
   render () {
     let animalArray = this.state.beasts.map((animal, index) => (
       <Hornedbeast
