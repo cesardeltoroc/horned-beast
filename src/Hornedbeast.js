@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card"
-import Button from 'react-bootstrap/Button'
 
 
 class Hornedbeast extends React.Component {
@@ -11,9 +10,7 @@ class Hornedbeast extends React.Component {
     }
   }
     beastClick = () => {
-    this.setState({
-      clickedBeast: this.state.clickedBeast + 1
-    })
+    this.setState({clickedBeast: this.state.clickedBeast + 1},  this.props.handleShow(this.props.title))
   }
   render() {
     return (
@@ -24,7 +21,6 @@ class Hornedbeast extends React.Component {
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text> {this.props.description} </Card.Text>
             <Card.Text> YOU ❤️ THIS IMAGE = {this.state.clickedBeast} </Card.Text> 
-            <Button>Enlarge Image</Button>
           </Card.Body>
         </Card>
       </div>

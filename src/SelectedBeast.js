@@ -1,24 +1,28 @@
 import React from 'react';
-import { Modal } from 'bootstrap';
-import ModalHeader from 'react-bootstrap/esm/ModalHeader';
-import { ModalFooter } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button'
-import Image from 'react-bootstrap/Image'
-
+import { Modal, Button, Image } from 'react-bootstrap';
 
 
 class SelectedBeast extends React.Component {
-  render () {
+  render (){
     return (
-      <Modal show={this.props.showSelectedBeast} onHide={this.props.handleClose}>
-          <ModalHeader>{this.SelectedBeast.src}</ModalHeader>
-          <Image>{this.props.src}</Image>
-          <ModalFooter>
-            <Button onClick={this.props.handleClose}> </Button>
-          </ModalFooter>
+      <>
+      <Modal
+        show={this.props.show}
+        onHide={this.props.handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>{this.props.selectedBeast.title}</Modal.Title>
+        </Modal.Header>
+        <Image src={this.props.selectedBeast.image_url}/>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={this.props.handleClose}>Close</Button>
+        </Modal.Footer>
       </Modal>
+      </>
     )
   }
-}
+} 
 
-export default SelectedBeast
+export default SelectedBeast;

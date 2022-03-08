@@ -18,4 +18,4 @@ Start time: NA
 
 Finish time: NA
 
-Actual time needed to complete: all sunday. 
+Actual time needed to complete: all sunday.
