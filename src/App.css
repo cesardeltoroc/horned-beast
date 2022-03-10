@@ -30,4 +30,10 @@ p.card-text{
   color: white;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-
+#userHorns{
+  width: 600px;
+  margin: auto;
+}
+body{
+  background-color: rgb(174, 200, 220);
+}

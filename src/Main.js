@@ -12,6 +12,7 @@ class Main extends React.Component {
         description={animal.description}
         horns={animal.horns}
         handleShow={this.props.handleShow}
+        key={index}
       />
     ));
     return(
