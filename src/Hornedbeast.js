@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "react-bootstrap/Card"
+import {Card} from "react-bootstrap"
 
 
 class Hornedbeast extends React.Component {
@@ -15,15 +15,15 @@ class Hornedbeast extends React.Component {
   render() {
     return (
       <div className="images">
-          <Card className="imgHorn" style={{ width: '45em', height: 'MaxContent'}}>
-          <Card.Img  onClick={this.beastClick} style={{height: '30em'}}src={this.props.src} />
-          <Card.Body className="cardBody">
-            <Card.Title>{this.props.title}</Card.Title>
-            <Card.Text> {this.props.description} </Card.Text>
-            <Card.Text> YOU ❤️ THIS IMAGE = {this.state.clickedBeast} </Card.Text> 
-          </Card.Body>
-        </Card>
-      </div>
+          <Card className="imgHorn" style={{ width: '45em', height: 'MaxContent' }}>
+            <Card.Img onClick={this.beastClick} style={{ height: '30em' }} src={this.props.src} />
+            <Card.Body className="cardBody">
+              <Card.Title>{this.props.title}</Card.Title>
+              <Card.Text> {this.props.description} </Card.Text>
+              <Card.Text> YOU ❤️ THIS IMAGE = {this.state.clickedBeast} </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
     )
   }
 }
