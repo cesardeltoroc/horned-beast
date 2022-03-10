@@ -28,7 +28,6 @@ class App extends React.Component {
     }else{
       const filterBeast = beast.filter(obj => obj.horns === parseInt(horns));
       this.setState({beast: filterBeast});
-      console.log(filterBeast);
     }
   }
   render () {
